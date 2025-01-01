@@ -2594,7 +2594,7 @@ Designate the displayed cell for a sprite. As this is an internal state change o
 <a id="cellcheckexbtn"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Program Block Only]</span></span>
 <span class="EngineField"><span class="NoBr">( NScr<span class="EngineVersion">2.49</span></span>, <span class="NoBr">ONScr</span>, <span class="NoBr">ONScr-EN</span>, <span class="NoBr">PONS )</span></span></div>
 <div class="WordName">cellcheckexbtn</div></h2><h4><a href="#category_button" class="WordCategory">Image Buttons</a></h4>
-<h3>exbtn NUM,NUM,STR</h3>
+<h3>cellcheckexbtn NUM,NUM,STR</h3>
 <div class="Arguments">
 <span class="ArgType">NUM</span><span class="ArgMeaning">Sprite number</span><div class="Space"></div>
 <span class="ArgType">NUM</span><span class="ArgMeaning">Button number</span><div class="Space"></div>
@@ -4392,7 +4392,7 @@ Gets the current version string, as a 3-digit number: for instance. version 1.90
 
 <a id="getvoicevol"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Program Block Only]</span></span>
 <span class="EngineField"><span class="NoBr">( NScr</span>, <span class="NoBr">ONScr, <span class="NoBr">ONScr-EN<span class="EngineVersion">20230220</span> )</span></span></div>
-<div class="WordName">getsevol</div></h2><h4><a href="#category_sound" class="WordCategory">Music/SFX Playback</a></h4>
+<div class="WordName">getvoicevol</div></h2><h4><a href="#category_sound" class="WordCategory">Music/SFX Playback</a></h4>
 <h3>getvoicevol %VAR</h3>
 <div class="Arguments">
 <span class="ArgType">VAR</span><span class="ArgMeaning">Numeric variable for voice volume (0-100)</span><div class="Space"></div></div>
@@ -4681,7 +4681,7 @@ Depending on whether the double-byte flag is 0 or 1, you can force your user to 
 <a id="inputnum"></a><h2><div class="Support"><span class="WordVersion">Ver.(undoc)</span><span class="WordField"><span class="NoBr">[Program Block Only]</span></span>
 <span class="EngineField"><span class="NoBr">( NScr )</span></span></div>
 <div class="WordName">inputnum</div></h2><h4><a href="#category_additional" class="WordCategory">Miscellaneous</a></h4>
-<h3>inputstr %VAR,STR[,NUM,NUM,NUM,NUM]</h3>
+<h3>inputnum %VAR,STR[,NUM,NUM,NUM,NUM]</h3>
 <div class="Arguments">
 <span class="ArgType">VAR</span><span class="ArgMeaning">Input result numeric variable</span><div class="Space"></div>
 <span class="ArgType">STR</span><span class="ArgMeaning">Message to display</span><div class="Space"></div>
@@ -4862,7 +4862,7 @@ itoa $1,%2</pre></div>
 <a id="itoa2"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Definition/Program Block]</span></span>
 <span class="EngineField"><span class="NoBr">( NScr<span class="EngineVersion">2.49</span></span>, <span class="NoBr">ONScr</span>, <span class="NoBr">ONScr-EN</span>, <span class="NoBr">PONS</span>, <span class="NoBr">ONSlaught )</span></span></div>
 <div class="WordName">itoa2</div></h2><h4><a href="#category_calc" class="WordCategory">Variable Manipulation/Calculations</a></h4>
-<h3>itoa $VAR,NUM</h3>
+<h3>itoa2 $VAR,NUM</h3>
 <div class="Arguments">
 <span class="ArgType">VAR</span><span class="ArgMeaning">String variable for the fullwidth result</span><div class="Space"></div>
 <span class="ArgType">NUM</span><span class="ArgMeaning">Numeric value to convert</span><div class="Space"></div></div>
@@ -5002,7 +5002,7 @@ Note that ENABLE_1BYTE_CHAR must be set at ONScripter compile time to be able to
 <a id="layermessage"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Program Block Only]</span></span>
 <span class="EngineField"><span class="NoBr">( NScr<span class="EngineVersion">2.03</span></span>, <span class="NoBr">ONScr-EN<span class="EngineVersion">20090411</span> )</span></span></div>
 <div class="WordName">layermessage</div></h2><h4><a href="#category_plugin_archive" class="WordCategory">Plugins/Archives</a></h4>
-<h3>setlayer NUM,STR</h3>
+<h3>layermessage NUM,STR</h3>
 <div class="Arguments">
 <span class="ArgType">NUM</span><span class="ArgMeaning">Layer number (defined using setlayer)</span><div class="Space"></div>
 <span class="ArgType">STR</span><span class="ArgMeaning">Message to send to the layer</span><div class="Space"></div></div>
@@ -5328,7 +5328,7 @@ The color is an #rrggbb hex value, like that used in HTML.</p>
 <a id="lookbackoff"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Program Block Only]</span></span>
 <span class="EngineField"><span class="NoBr">( NScr )</span></span></div>
 <div class="WordName">lookbackoff</div></h2><h4><a href="#category_lookback" class="WordCategory">Log Mode</a></h4>
-<h3>lookbackon</h3>
+<h3>lookbackoff</h3>
 <div class="Arguments"></div>
 <div class="ContentBody"><p class="Description">Stops collecting Log Mode data; data collection can be restarted with <b>lookbackon</b>.</p>
 <hr><a href="#lookbackon">lookbackon</a> / 
@@ -5554,7 +5554,7 @@ Loads an extended sprite using additive composition.<br>
 <a id="lsp2sub"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Program Block Only]</span></span>
 <span class="EngineField"><span class="NoBr">( NScr<span class="EngineVersion">2.93</span></span>, <span class="NoBr">ONScr-EN )</span></span></div>
 <div class="WordName">lsp2sub</div></h2><h4><a href="#category_sprite_ex" class="WordCategory">Extended Sprites</a></h4>
-<h3>lsp2add NUM,STR,NUM,NUM,NUM,NUM,NUM[,NUM]</h3>
+<h3>lsp2sub NUM,STR,NUM,NUM,NUM,NUM,NUM[,NUM]</h3>
 <div class="Arguments">
 <span class="ArgType">NUM</span><span class="ArgMeaning">Extended-sprite number (0 - 255)</span><div class="Space"></div>
 <span class="ArgType">STR</span><span class="ArgMeaning">Image filename or sprite processing string</span><div class="Space"></div>
@@ -5630,7 +5630,7 @@ The only difference between <b>lsp2add</b> and <b>lsph2add</b> is the beginning 
 <a id="lsph2sub"></a><h2><div class="Support"><span class="WordVersion">Ver.(undoc)</span><span class="WordField"><span class="NoBr">[Program Block Only]</span></span>
 <span class="EngineField"><span class="NoBr">( NScr<span class="EngineVersion">2.93</span></span>, <span class="NoBr">ONScr-EN )</span></span></div>
 <div class="WordName">lsph2sub</div></h2><h4><a href="#category_sprite_ex" class="WordCategory">Extended Sprites</a></h4>
-<h3>lsph2add NUM,STR,NUM,NUM,NUM,NUM,NUM[,NUM]</h3>
+<h3>lsph2sub NUM,STR,NUM,NUM,NUM,NUM,NUM[,NUM]</h3>
 <div class="Arguments">
 <span class="ArgType">NUM</span><span class="ArgMeaning">Extended-sprite number (0 - 255)</span><div class="Space"></div>
 <span class="ArgType">STR</span><span class="ArgMeaning">Image filename or sprite processing string</span><div class="Space"></div>
@@ -7269,7 +7269,7 @@ Generates a random number and sticks it in the numerical variable, ranging from 
 <a id="rnd2"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Definition/Program Block]</span></span>
 <span class="EngineField"><span class="NoBr">( NScr</span>, <span class="NoBr">ONScr</span>, <span class="NoBr">ONScr-EN</span>, <span class="NoBr">PONS</span>, <span class="NoBr">ONSlaught )</span></span></div>
 <div class="WordName">rnd2</div></h2><h4><a href="#category_calc" class="WordCategory">Variable Manipulation/Calculations</a></h4>
-<h3>rnd %VAR,NUM,NUM</h3>
+<h3>rnd2 %VAR,NUM,NUM</h3>
 <div class="Arguments">
 <span class="ArgType">VAR</span><span class="ArgMeaning">Numeric variable</span><div class="Space"></div>
 <span class="ArgType">NUM</span><span class="ArgMeaning">Lower range for the random number</span><div class="Space"></div>
